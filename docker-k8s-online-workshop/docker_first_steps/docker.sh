@@ -40,7 +40,7 @@ docker ps
 # Notice the name and the port it is running on
 # Let's check the logs of this container
 
-docker logs container_id
+docker logs upbeat_kowalevski
 
 # In order to be able to reach the web server from our local machine, we would need to expose the container port to the host port we want it to map into
 # Specific applications run on specific ports, SQL Server on 1433, nginx on 80, mysql on 3306 etc.
@@ -57,7 +57,7 @@ docker run -d -p 9001:80 nginx:1.25.3
 
 # Once I stop one container, the web server is not reachable anymore on that port / URL:
 
-docker stop container_id
+docker stop upbeat_kowalevski
 
 # Although containers are stopped, it does not mean they are removed.
 # docker ps -a shows us all containers, also the stopped ones.
